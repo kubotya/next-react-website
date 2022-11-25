@@ -1,7 +1,13 @@
+import Logo from "../Logo/Logo";
+import Nav from "../nav/nav";
+
 export default function Header() {
   return (
     <>
-      <header>HEADER</header>
+      <header>
+        <Logo boxOn />
+        <Nav />
+      </header>
 
       <main>
         <div>
