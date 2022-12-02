@@ -1,22 +1,17 @@
+import Container from "/component/container/container";
 import Logo from "../Logo/Logo";
 import Nav from "../nav/nav";
+import styles from "../Header/Header.module.css";
 
 export default function Header() {
   return (
-    <>
-      <header>
-        <Logo boxOn />
-        <Nav />
-      </header>
-
-      <main>
-        <div>
-          <h1>CUBE</h1>
-          <p>アウトプットしていくサイト</p>
+    <header>
+      <Container large>
+        <div className={styles.flexContainer}>
+          <Logo boxOn />
+          <Nav />
         </div>
-      </main>
-
-      <footer>FOOTER</footer>
-    </>
+      </Container>
+    </header>
   );
 }
