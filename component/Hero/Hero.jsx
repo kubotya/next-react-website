@@ -1,14 +1,26 @@
-import Link from "next/link";
 import styles from "../Hero/Hero.module.css";
+import Image from "next/image";
+import cube from "/blog/images/cube.jpg";
 
-export default function Hero(props) {
-  const { title, subtitle, imageOn = false } = props;
-
+export default function Hero({ title, subtitle, imageOn = false }) {
   return (
     <div className={styles.flexContainer}>
-      <h1 className={styles.title}>{title}</h1>
-      <p className={styles.subtitle}>{subtitle}</p>
-      {imageOn && <figure>(画像)</figure>}
+      <div className={styles.text}>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.subtitle}>{subtitle}</p>
+      </div>
+      {imageOn && (
+        <figure className={styles.image}>
+          <Image
+            src={cube}
+            alt=""
+            layout="responsive"
+            sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
+            priority
+            placeholder="blur"
+          />
+        </figure>
+      )}
     </div>
   );
 }
