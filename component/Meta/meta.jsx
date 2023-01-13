@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { siteMeta } from "/blog/lib/constants";
+import { siteMeta } from "../../lib/constants";
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
   siteMeta;
 
-import siteImg from "/blog/images/ogp.jpg";
+import siteImg from "/pages/blog/images/ogp.jpg";
 
 export default function Meta({
   pageTitle,

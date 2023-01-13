@@ -1,5 +1,6 @@
-import { getPostBySlug } from "../blog/lib/api";
+import { getPostBySlug } from "../../lib/api";
 import Container from "/component/Container/container";
+import PostHeader from "component/post-header/post-header";
 
 export default function Schedule({
   title,
@@ -10,7 +11,9 @@ export default function Schedule({
 }) {
   return (
     <Container>
-      <h1>{title}</h1>
+      <article>
+        <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+      </article>
     </Container>
   );
 }
@@ -30,5 +33,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-p.226から

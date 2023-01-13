@@ -1,8 +1,10 @@
 import { createClient } from "microcms-js-sdk";
 
 export const client = createClient({
-  serviceDomain: process.envSERVICE_DOMAIN,
+  serviceDomain: process.env.SERVICE_DOMAIN,
   apiKey: process.env.API_KEY,
+  // apiKey: "xUCt0xjuOqt87ppccFlgp3U8SaW3d0umUoKF",
+  // serviceDomain: "kubota",
 });
 
 export async function getPostBySlug(slug) {

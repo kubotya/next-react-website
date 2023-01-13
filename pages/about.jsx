@@ -9,7 +9,7 @@ import {
   TwoColumnSidebar,
 } from "../component/Two-column/Two-column";
 import Image from "next/image";
-import eyecatch from "../blog/images/about.jpg";
+import eyecatch from "/pages/blog/images/about.jpg";
 
 export default function About() {
   return (
