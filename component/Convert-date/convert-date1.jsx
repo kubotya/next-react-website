@@ -3,7 +3,7 @@ import ja from "date-fns/locale/ja";
 
 export default function ConvertDate({ dateISO }) {
   return (
-    <time dateTime={fateISO}>
+    <time dateTime={dateISO}>
       {format(parseISO(dateISO), "yyyy年MM月dd日", {
         locale: ja,
       })}

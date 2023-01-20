@@ -1,10 +1,8 @@
 import { createClient } from "microcms-js-sdk";
 
 export const client = createClient({
-  serviceDomain: process.env.SERVICE_DOMAIN,
-  apiKey: process.env.API_KEY,
-  // apiKey: "xUCt0xjuOqt87ppccFlgp3U8SaW3d0umUoKF",
-  // serviceDomain: "kubota",
+  apiKey: "xUCt0xjuOqt87ppccFlgp3U8SaW3d0umUoKF",
+  serviceDomain: "kubota",
 });
 
 export async function getPostBySlug(slug) {
@@ -15,7 +13,7 @@ export async function getPostBySlug(slug) {
     });
     return post.contents[0];
   } catch (err) {
-    console.log("~~ getPostByslug ~~");
+    console.log("~~ getPostBySlug ~~");
     console.log(err);
   }
 }
