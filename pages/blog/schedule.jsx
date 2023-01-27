@@ -61,4 +61,3 @@ export async function getStaticProps() {
   };
 }
 
-p.237から
