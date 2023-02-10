@@ -3,7 +3,7 @@ import Meta from "component/Meta/meta";
 import Container from "component/Container/container";
 import Hero from "component/Hero/Hero";
 import Posts from "../../component/Posts/post";
-import { getPlaiceholder } from "plaithholder";
+import { getPlaiceholder } from "plaiceholder";
 
 import { eyecatchLocal } from "../../lib/constants";
 

@@ -41,6 +41,7 @@ export default function Post({
 
         <figure>
           <Image
+            key={eyecatch.url}
             src={eyecatch.url}
             alt=""
             layout="responsive"
@@ -82,7 +83,7 @@ export default function Post({
 }
 
 export async function getStaticPaths() {
-  const allSlugs = await getAllSlugs()
+  const allSlugs = await getAllSlugs();
 
   return {
     paths: allSlugs.map(({ slug }) => `/blog/${slug}`),

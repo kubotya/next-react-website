@@ -1,6 +1,6 @@
 import styles from "../../component/Posts/post.module.css";
 import Link from "next/link";
-import Image from "next/iamge";
+import Image from "next/image";
 
 export default function Posts({ posts }) {
   return (
@@ -12,9 +12,8 @@ export default function Posts({ posts }) {
               <Image
                 src={eyecatch.url}
                 alt=""
-                layout="responsive"
-                width={eyecatch.width}
-                height={eyecatch.height}
+                layout="fill"
+                objectFit="cover"
                 sizes="(min-width: 1152px) 576px, 50vw"
                 placeholder="blur"
                 blurDataURL={eyecatch.blurDataURL}
