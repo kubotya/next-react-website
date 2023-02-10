@@ -12,8 +12,10 @@ export default function Posts({ posts }) {
               <Image
                 src={eyecatch.url}
                 alt=""
-                layout="fill"
+                layout="responsive"
                 objectFit="cover"
+                width={eyecatch.width}
+                height={eyecatch.height}
                 sizes="(min-width: 1152px) 576px, 50vw"
                 placeholder="blur"
                 blurDataURL={eyecatch.blurDataURL}
